@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package auth;
+
+option go_package = "./proto";
+
+service AuthService {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}  // Unary
+  rpc GreetManyTimes (HelloRequest) returns (stream HelloReply) {}  // Server streaming
+  rpc LongGreeting (stream HelloRequest) returns (HelloReply) {}  // Client streaming
+  rpc EveryoneGreeting (stream HelloRequest) returns (stream HelloReply) {}  // Bidirectional
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
