@@ -1,3 +1,3 @@
-module github.com/yourusername/grpc-auth-demo
+module github.com/yourusername/grpcAUTH
 
 go 1.22.2
