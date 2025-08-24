@@ -11,7 +11,7 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/sortlight/grpcAUTH/proto" // Adjust to your path, e.g., "github.com/yourusername/grpc-auth-demo/proto"
+	"././grpcAUTH/proto" // Adjust to your path, e.g., "github.com/yourusername/grpc-auth-demo/proto"
 )
 
 var (
